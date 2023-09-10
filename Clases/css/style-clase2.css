@@ -1,0 +1,44 @@
+p{ /*Especificidad: 0,0,1*/
+    color:blue;
+
+}
+h1 span{ /*Especificidad: 0,0,2 - Más especifico, más personalizado, más prioridad
+    selector de todos los -span- dentro de un -h1-*/
+    color:red;
+}
+
+/*se selecciona a todos los elementos h3 y h4 */
+h3, h4{
+    color:blueviolet
+}
+p{ /*Especificidad: 0,0,1 -> como hay 2 selectores iguales se tiene prioridad al ultimo, por orden del codigo d arriba
+    hacia abajo*/
+    color:burlywood;
+
+}
+
+nav a:nth-child(2){  /*ESPECIFIDAD: 0,1,2 -> más prioridad*/
+    text-transform: uppercase;
+}
+
+/*ID*/
+#titulo{
+    font-family: 'Lucida Sans';
+}
+
+/*CLASES*/
+.clase{
+    text-transform: uppercase;
+    color:chartreuse;
+}
+
+/*los estilos se aplican a los selectores que tengan una especifidad mayor. Y si tienen la misma especifidad, 
+el que se encuentre ultimo(se van aplicando los estilos a medida que se va cargando la pagina*/
+
+.section-n{
+    background-color:hotpink;
+}
+.section-c{
+    background-color:rgb(187, 139, 231);
+    width: 50%;
+}

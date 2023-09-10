@@ -1,0 +1,32 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-productos{
+    display: flex;
+    gap: 1rem;
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    
+}
+.producto:hover{
+    background-color: rgb(22, 129, 218);
+    color:white
+}
+.producto img{
+    height: 12rem;
+}
+
+.producto a{
+    text-decoration: none;
+    color: black;
+}
