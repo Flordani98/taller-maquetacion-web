@@ -1,0 +1,45 @@
+.cuadrado{
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(226, 43, 165);
+    position:static;
+    /*la position static(default) no acepta los valores left, botton, top, right*/
+    /*position: absolute; /*en el caso del absolute esta utiliza como referencia al elemento padre, 
+    NO al elemento que esta encima como en la position relative*/
+   /* z-index: -1; /*manda al fondo el elemento*/
+    top:20rem;
+    left:25rem;
+}
+
+.cuadrado-2{
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(28, 223, 236);
+    /*la position static no acepta los valores left, botton, top, right*/
+    position: relative; /*se pueden mover los elementos libremente, por lo tanto
+    se puede poner delante o detras de otros*/
+
+   /* z-index: -1; /*manda al fondo el elemento*/
+    top:1rem;
+    left:1rem;
+}
+
+.circulo{
+    width: 6rem;
+    height: 6rem;
+    background-color: rgb(252, 64, 31);
+    border-radius: 50%;
+    position: relative;
+    top: 5rem;
+    left: 56rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(47, 189, 233);
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 3rem;
+    position:fixed; /*FIJO: mantiene al elemento fijo en su posición*/
+}

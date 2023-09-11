@@ -1,0 +1,40 @@
+html{
+    box-sizing: border-box; /*ESTANDAR, utilizar en todos los proyectos*/
+}
+
+/*A todos los elementos o pseudoelementos antes o despues le apliquen o le hereden esa propiedad del border-box*/
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+
+.cuadrado-1{
+    background-color: rgb(211, 108, 180);
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+    /*box-sizing: content-box; por defecto se le coloca en este valor, NO respeta el tamaño del contenedor*/
+    box-sizing: border-box; /*no respeta el tamaño del contenido, pero si respeta el tamaño del contenedor*/
+    margin: 20px 30px 10px 20px;
+   
+}
+.cuadrado-2{
+    background-color: rgb(144, 42, 228);
+    width: 20%;
+    height: 20%;
+    padding: 10px;
+    /*box-sizing: content-box; por defecto se le coloca en este valor, NO respeta el tamaño del contenedor*/
+    box-sizing: border-box; /*no respeta el tamaño del contenido, pero si respeta el tamaño del contenedor*/
+
+}
+
+.parrafo{
+    background-color: aqua;
+    /*display: block; *//*un bloque con salto de linea*/
+    /*display: inline; /*toda una linea, no se puede cambiar el width y el height*/ 
+    display: inline-block; /*es como el inline pero si se puede aplicar el width y el height*/
+}
+.parrafo-2{
+    background-color: rgb(60, 16, 85);
+}
+

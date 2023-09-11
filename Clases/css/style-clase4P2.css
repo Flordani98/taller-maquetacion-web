@@ -1,0 +1,33 @@
+html{
+    box-sizing: border-box; /*para que en la pagina no se modifique el tamaño del contenedor y NO el tamaño del contenido*/
+    font-size: 62.5%; /*transforma 10 pixeles a 1 rem*/
+}
+
+*,*:after, *:before{ /*selector de todos los elementos, pseudoelementos antes y despues*/
+    box-sizing: inherit; /*para poder heredar el border-box*/
+}
+body{
+    margin:0;
+    background-image: url(../img/mountains.png);
+    background-repeat: no-repeat; /*para que no se repita la imagen varias veces en la pagina*/
+    background-size: cover; /*para que la imagen cubra toda la pantalla*/
+    
+}
+
+
+.flex{
+    display: flex; /*por defecto la flex-direction es row*/
+    flex-direction: row;
+    gap: 5rem; /*para generar espacio entre los elementos*/
+}
+
+.articulo{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(45, 214, 214);
+    padding: .5rem;
+}
+
+.articulo p{
+    text-align: justify;
+}
