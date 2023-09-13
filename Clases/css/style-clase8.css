@@ -1,0 +1,19 @@
+@import url(./style-global.css);
+
+.contenedor-central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista-articulos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    width: 65%;
+}
+
+.articulo{
+    flex-basis: calc(33.3% - .5rem);
+    background-color: aqua;
+}

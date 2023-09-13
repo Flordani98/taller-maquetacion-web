@@ -1,0 +1,13 @@
+html{
+    box-sizing: border-box; /*ESTANDAR, utilizar en todos los proyectos*/
+    font-size: 62.5%;
+}
+
+/*A todos los elementos o pseudoelementos antes o despues le apliquen o le hereden esa propiedad del border-box*/
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin:0;
+}

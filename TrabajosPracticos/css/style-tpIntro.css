@@ -1,25 +1,161 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(71, 148, 97);
-    color:rgb(253, 253, 253);
+html {
+    box-sizing: border-box;
+    /*ESTANDAR, utilizar en todos los proyectos*/
 }
 
-#ejercicio-3{
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    width: auto;
+/*A todos los elementos o pseudoelementos antes o despues le apliquen o le hereden esa propiedad del border-box*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
-#ejercicio-4{
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../imagenes/planetas.png);
+    color: rgb(253, 253, 253);
+}
+
+
+header.ejercicio-2 {
+    z-index: 1;
+    /* background-color: rgb(15, 67, 91); */
+    background-color: rgb(50, 142, 218);
+    text-decoration: none;
+    position: fixed;
+    top: 0rem;
+    width: 100%;
+}
+
+.ejercicio-2 nav {
+    display: flex;
+    /* flex-direction: row; */
+    position: relative;
+    bottom: 2rem;
+    gap: 5rem;
+    justify-content: center;
+
+
+}
+
+.ejercicio-2 nav a {
+    text-decoration: none;
+    color: white;
+}
+.ejercicio-2 nav a:hover{
+   
+    text-shadow: 0rem 0rem 1rem white;
+}
+
+#page-logo img {
+
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.ejercicios-TP {
+    position: relative;
+    top: 6rem;
+    margin: 3rem;
+}
+
+#ejercicio-1 h1 {
+    text-align: center;
+}
+
+#ejercicio-1 h1:hover {
+    text-shadow: 0rem 0rem 1rem white;
+    cursor: default;
+
+}
+
+.ejercicio-3 figure{
+    display: flex;
+    gap:5.5rem;
+    /* background-color: rgb(10, 23, 39); */
+    /* background-image: linear-gradient( rgba(255,0,0,0), rgb(10, 23, 39), rgba(255,0,0,0)); */
+    width: 100%;
+    justify-content: center;
+    padding: 2rem 0rem;
+    margin:0;
+}
+
+.imagen-galeria{
+    width: 15.625rem;
+    height: 15.625rem;
+    object-fit: cover;
+  
+}
+
+.imagenes{
+    opacity: 0.7;
+}
+
+.imagenes:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+#ejercicio-4 {
     align-items: center;
 }
 
-#name::-webkit-input-placeholder {
-    color: white;
+.ejercicio-5 p {
+    font-size: 2rem;
+    color: rgb(87, 202, 203);
+    background-color: rgb(62, 61, 108);
 }
 
-.ejercicio-5 p{
-    font-size: 2rem;
-    color:rgb(0, 0, 0);
-    background-color: rgb(161, 236, 161);
+.ejercicio-6 {
+    text-decoration: underline;
+    display: inline;
+}
+
+.ejercicio-6 p:nth-child(2) {
+    text-align: left;
+}
+
+.ejercicio-6 p:nth-child(3) {
+    text-align: center;
+}
+
+.ejercicio-6 p:nth-child(4) {
+    text-align: right;
+}
+
+.ejercicio-7 li {
+    list-style-type: upper-roman;
+
+}
+
+.ejercicio-9 div {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(50, 142, 218);
+    padding: 0.3rem;
+}
+
+.redes-sociales{
+    display: flex;
+    gap:5rem;
+    justify-content: center;
+}
+
+.logo-footer{
+    width:2.5rem;
+    height:2.5rem;
+}
+
+footer{
+    position: relative;
+    top: 7rem;
+    margin: 3rem;
+    padding: 1rem;
 }

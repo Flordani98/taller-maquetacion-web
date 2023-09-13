@@ -13,45 +13,152 @@
 </head>
 
 <body>
+    <!--#region header-->
     <header class="ejercicio-2">
+        <div>
+            <a id="page-logo" href="" >
+                <img src="./imagenes/cat1.png" alt="Logo de la página">
+            </a>
+        </div>
         <nav>
+            <a href="">Inicio</a>
+            <a href="">Ejercicios</a>
             <a href="https://www.google.com">Busqueda</a> <!--self-->
             <a href="https://www.youtube.com" target="_blank">Youtube</a>
             <a href="mailto://flordani98@gmail.com">Correo</a>
         </nav>
     </header>
-    <section id="ejercicio-1">
-        <h1>Trabajo Práctico - Introducción a HTML y CSS</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id magna condimentum, luctus nisl vel,
-            commodo nunc. </p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
-    </section>
-    <figure id="ejercicio-3">
-        <img src="./imagenes/img-pajaro.jpg" alt="Pajaro sobre alambrado">
-        <figcaption>Un pajaro sobre un alambrado</figcaption>
-    </figure>
+    <!--endregion-->
 
-    <form id="ejercicio-4">
-        <label>Nombre:</label>
-        <input id="name" type="text" placeholder="Ingrese su nombre">
-        <label>Fecha de nacimiento:</label>
-        <input type="date" placeholder="dd/mm/aaaa">
-        <br>
-        <br>
-        <input type="submit"></input>
-        <input type="reset"></input>
-    </form>
-    <section class="ejercicio-5">
-        <p>Ejercicio N°5 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto esse, est cupiditate quidem hic
-            tempora asperiores main
-        </p>
-    </section>
 
+    <!--#region seccion-ejercicios-->
+    <section class="ejercicios-TP">
+
+        <div id="ejercicio-1">
+            <h1>Trabajo Práctico - Introducción a HTML y CSS</h1>
+            <h3>Ejercicio 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id magna condimentum, luctus nisl vel,
+                commodo nunc. </p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        
+        <div class="ejercicio-3">
+            <h3>Ejercicio 3: Imagenes</h3>
+            <!-- #region comentario-->
+            <!-- Estructura valida si cada imagen y su descripcion se consideran como
+                una unidad independiente. Para aplicar estilos o reglas especificas
+                a cada img o descripcion por separado
+
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+
+            <figure>
+                <img src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            -->
+
+            <!--Estructura valida para agrupar varias imagenes relacionadas o para 
+            aplicar estilos generales a todas las imagenes dentro del mismo(figura con div)-->
+            
+            <!-- #endregion-->
+            <figure>
+                <div class="imagenes">
+                    <img class="imagen-galeria" src="./imagenes/img-pajaro.jpg" alt="Pajaro sobre alambrado">
+                    <figcaption class="descripcion-img">Un pajaro sobre un alambrado</figcaption>  
+                </div>
+
+                <div class="imagenes">
+                    <img class="imagen-galeria" src="./imagenes/pajaro2.jpg" alt="pajaro sobre un arbol">
+                    <figcaption class="descripcion-img">Lorem ipsum dolor sit amet</figcaption>    
+                </div>
+              
+                <div class="imagenes">
+                    <img class="imagen-galeria" src="./imagenes/colibri.jpg" alt="colibri">
+                    <figcaption class="descripcion-img">consectetur adipisicing elit.</figcaption>
+                </div>
+            </figure>
+        </div>
     
+        <form id="ejercicio-4">
+            <h3>Ejercicio 4: Input de Texto</h3>
+            <label>Nombre:</label>
+            <input id="name" type="text" placeholder="Ingrese su nombre">
+            <label>Fecha de nacimiento:</label>
+            <input type="date" placeholder="dd/mm/aaaa">
+            <br>
+            <br>
+            <input type="submit"></input>
+            <input type="reset"></input>
+        </form>
+        
+        <div class="ejercicio-5">
+            <h3>Ejercicio 5: Formato de texto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto esse, est cupiditate
+                quidem hic
+                tempora asperiores main
+            </p>
+        </div>
+        <div class="ejercicio-6">
+            <h3>Ejercicio 6: Alinear parrafos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat porro praesentium perferendis
+    
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat porro praesentium perferendis
+    
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis placeat porro praesentium perferendis
+    
+            </p>
+        </div>
+    
+        <div>
+            <h3>Ejercicio 7: Lista ordenada</h3>
+            <ol class="ejercicio-7">
+                <li>C</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVA</li>
+                <li>MySQL</li>
+    
+            </ol>
+        </div>
+        <div class="ejercicio-9">
+            <h3>Ejercicio 9: Botones Estilizados</h3>
+            <div>
+                <p>Texto que cambia!</p>
+                <button>Cambiar Color</button>
+                <button>Cambiar Fuente</button>
+                <button>Cambiar Tamaño</button>
+                
+            </div>
+            <!--Ejercicio 9: Botones Estilizados
+    Crea tres botones utilizando la etiqueta `<button>`. Aplica estilos diferentes a cada botón cuando están en estado normal,
+         al pasar el mouse por encima y cuando están activos.-->
+    
+        </div>
+    </section>
+    <!--endregion-->
+  
+  
+    <!--#region footer-->
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com" target="_blank"><img class="logo-footer" src="./imagenes/facebook-logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="logo-footer" src="./imagenes/instagram-logo.png" alt="Instagram"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="logo-footer" src="./imagenes/twitter-logo.png" alt="Twitter"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img class="logo-footer" src="./imagenes/linkedin-logo.png" alt="LinkedIn"></a>
+
+        </div>
+    </footer>
+    <!--endregion-->
 
 
 </body>
