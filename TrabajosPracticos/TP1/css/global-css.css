@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*transforma 10 pixeles a 1 rem*/
+
+    /*ESTANDAR, utilizar en todos los proyectos*/
+}
+
+/*A todos los elementos o pseudoelementos antes o despues le apliquen o le hereden esa propiedad del border-box*/
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
