@@ -1,0 +1,81 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    font-size: 1.3rem;
+    /* align-items: center; */
+    /* width: 80%; */
+
+}
+
+.form-group legend{
+    text-align: center;
+    background-color: rgb(0, 83, 134);
+    color: white;
+    text-transform: uppercase;
+    padding: .6rem;
+    font-weight: bold;
+    /* font-size: 1.2rem; */
+    width: 100%;
+}
+
+/* .form-group label{
+    display: inline-block;
+    width: 20%;
+    margin:.5rem;
+    
+}
+
+.form-group input{
+    position: relative;
+    border: 0.1rem;
+    width:70%;
+} */
+
+.form-content{
+    margin:2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap:1.8rem;
+
+}
+
+.campo{
+    display: flex;
+}
+
+.campo label{
+    flex-basis:10rem;
+}
+
+input:not([type="radio"]),
+.campo textarea
+{
+    flex: 1;
+}
+
+.btn{
+    border:none;
+    color: white;
+    text-decoration: none;
+    padding: 1.2rem;
+    margin:.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: rgb(139, 188, 1);
+    width: 98%;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background-color: rgb(114, 150, 16);
+}

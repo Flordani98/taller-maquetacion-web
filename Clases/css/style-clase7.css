@@ -20,8 +20,12 @@ body{
 .lista-productos{
     display: grid;
     /*grid-template-columns: 1fr 1fr 1fr; ESTO es lo mismo que lo de abajo:*/
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr); /*1parametro: cantidad columnas, 2par: tamaño de la columna*/
+    /* grid-template-rows: 300px 300px; crea 2 filas con el tamaño*/
+    /*fr: indica que voy a dividir mi pantalla por fracciones*/
+    /* column-gap: .5rem;
+    row-gap: .5rem; */
+    gap: .5rem;
 }
 
 .producto{

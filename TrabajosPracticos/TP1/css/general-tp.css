@@ -40,7 +40,6 @@ footer{
     /* margin-top: 2rem; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 5rem;
     text-align: center;
 }
@@ -48,12 +47,12 @@ footer{
     display: flex;
     justify-content: center;
     gap: 9rem;
+    
 }
 
 .elemento-nav{
     display: flex;
     flex-direction: column;
     gap: 1.7rem;
-    align-items: left;
-
+    text-align: left;
 }

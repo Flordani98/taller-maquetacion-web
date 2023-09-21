@@ -1,0 +1,28 @@
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.gallery-images{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 80%;
+}
+
+
+.gallery img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+.gallery img:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.15);
+    transition: transform .5s;
+}

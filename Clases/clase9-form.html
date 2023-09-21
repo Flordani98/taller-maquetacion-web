@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <br>
+        <fieldset>
+            <legend>Tus datos</legend>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre..." required>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" value="probando" readonly> <!--solo lectura-->
+            </div>
+            <div>
+                <labe for="tel">Telefono: </labe>
+                <input type="tel" id="tel" required>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea name="" id="mensaje" cols="30" rows="10">Hola</textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+            <label for="">Paises</label>
+            <select name="paises" id="">
+                <option value="" disabled>-- Seleccione --</option>
+                <option value="ar" selected>Argentina</option>
+                <option value="br">Brasil</option>
+                <option value="cl">Chile</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información extra</legend>
+            <label for="cliente">Cliente</label>
+            <input
+            type="radio"
+            id="cliente"
+            name="tipo-cliente"
+            value="cliente"
+            >
+            <label for="proveedor">Proveedor</label>
+            <input
+                type="radio"
+                id="proveedor"
+                name="tipo-cliente"
+                value="proveedor"
+            >
+            <div class="campo">
+                <label for="categoria">Categoria de Interes</label>
+                <input list="categorias">
+                <datalist id="categorias"> <!--permite filtrar al escribir una letra, lo busca-->
+                    <option value="Cocina">
+                    <option value="Living"></option>
+                    <option value="Exterior"></option>
+                    <option value="Exterior"></option>
+
+                </datalist>
+            </div>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="submit">
+        <input type="range">
+        <input type="color">
+        <input type="file">
+        <input type="checkbox">
+        <input type="radio">
+        <button>Enviar</button>
+
+    </form>
+</body>
+</html>

@@ -40,6 +40,7 @@
 .producto a:hover{
     background-color: #027bc1;
     color:white;
+    transition: all .5s ease;
 }
 
 .producto img{
@@ -54,6 +55,8 @@
 .container-us img{
     flex:50%;
     height: 25rem;
+    object-fit: cover; /*evita que la imagen se aplaste al redimencionar la pagina*/
+
 }
 
 .text-us{

@@ -1,0 +1,24 @@
+.container-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.content-us{
+    display: flex;
+    width: 80%;
+}
+
+
+.container-us img{
+    height: 30rem;
+    flex:50%;
+    object-fit: cover;
+    border-bottom-right-radius: .7rem;
+}
+
+.text-us{
+    flex:50%;
+    margin: 2.5rem;
+}
